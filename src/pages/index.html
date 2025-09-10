@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" class="active">Shop</a>
+        <a href="#" id="cartBtn">Shopping Cart</a>
+    </nav>
+    <div class="sort-bar">
+        <a href="#">Sort by price</a>
+        <a href="#">Sort by date</a>
+    </div>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Shops:</h3>
+        <button>Flowery Fragrant</button>
+        <button>Bloomwell</button>
+        <button>etc..</button>
+        <button>etc..</button>
+        <button>etc..</button>
+    </aside>
+
+    <main class="main">
+        <div class="products">
+            <div class="product" data-name="Rose" data-price="5">
+                <img src="../img/rose.jpg" alt="Rose">
+                <h4>Rose</h4>
+                <h5>Price: $5</h5>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Tulip" data-price="4">
+                <img src="../img/tulip.jpg" alt="Tulip">
+                <h4>Tulip</h4>
+                <h5>Price: $4</h5>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Lily" data-price="4">
+                <img src="../img/lily.jpg" alt="Lily">
+                <h4>Lily</h4>
+                <h5>Price: $4</h5>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Orchid" data-price="7">
+                <img src="../img/orchid.jpg" alt="Orchid">
+                <h4>Orchid</h4>
+                <h5>Price: $7</h5>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Peony" data-price="7">
+                <img src="../img/peony.jpg" alt="Peony">
+                <h4>Peony</h4>
+                <h5>Price: $7</h5>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cartItems"></ul>
+    <p id="total">Total: $0</p>
+    <div class="cart-actions">
+        <button id="clearCart">Clear Cart</button>
+        <button id="submitCart">Submit</button>
+    </div>
+</div>
+
+<div id="toast"></div>
+
+<footer>
+    <p><strong>FlowerShop Inc.</strong> | 📞 +1 (555) 123-4567 | 📍 123 Bloom Street, Garden City</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
